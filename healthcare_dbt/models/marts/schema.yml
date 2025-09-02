@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: mart_risk_base
+    columns:
+      - name: enc_id
+        tests: [not_null, unique]
+      - name: patient_id
+        tests: [not_null]
+      - name: readmit_30d
+        tests: [not_null]

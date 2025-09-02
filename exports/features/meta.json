@@ -1,0 +1,20 @@
+{
+  "label": "readmit_30d",
+  "categoricals": [
+    "sex"
+  ],
+  "numericals": [
+    "age",
+    "length_of_stay_days",
+    "avg_hemo",
+    "avg_glucose",
+    "avg_creatinine",
+    "avg_wbc",
+    "avg_platelets"
+  ],
+  "rows": {
+    "train": 252,
+    "val": 64,
+    "test": 80
+  }
+}

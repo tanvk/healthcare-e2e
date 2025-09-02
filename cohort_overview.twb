@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cohort_overview' inline='true' name='federated.1mgpeqp0q4tnpr1441u8p1w54qjs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cohort_overview' name='textscan.0th7c9111xf80u12t2h831uwl1ne'>
+            <connection class='textscan' directory='/Users/tanvikaurwar/Desktop/docs/projects/healthcare-e2e/exports/bi' filename='cohort_overview.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='feature_importance' name='textscan.0x02jw705aksyn1d5h4s40495rsu'>
+            <connection class='textscan' directory='/Users/tanvikaurwar/Desktop/docs/projects/healthcare-e2e/exports/bi' filename='feature_importance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0th7c9111xf80u12t2h831uwl1ne' name='cohort_overview.csv' table='[cohort_overview#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='avg_age' ordinal='0' />
+            <column datatype='real' name='avg_los' ordinal='1' />
+            <column datatype='integer' name='encounters' ordinal='2' />
+            <column datatype='real' name='readmit_rate_pct' ordinal='3' />
+            <column datatype='integer' name='readmits' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_age]</local-name>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias>avg_age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_los</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_los]</local-name>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias>avg_los</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encounters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[encounters]</local-name>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias>encounters</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmit_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[readmit_rate_pct]</local-name>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias>readmit_rate_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[readmits]</local-name>
+            <parent-name>[cohort_overview.csv]</parent-name>
+            <remote-alias>readmits</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cohort_overview.csv' datatype='table' name='[__tableau_internal_object_id__].[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]' role='measure' type='quantitative' />
+      <column caption='Avg Age' datatype='real' name='[avg_age]' role='measure' type='quantitative' />
+      <column caption='Avg Los' datatype='real' name='[avg_los]' role='measure' type='quantitative' />
+      <column caption='Encounters' datatype='integer' name='[encounters]' role='measure' type='quantitative' />
+      <column caption='Readmit Rate Pct' datatype='real' name='[readmit_rate_pct]' role='measure' type='quantitative' />
+      <column caption='Readmits' datatype='integer' name='[readmits]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/jn/mtw03s45253glfrzp_yyc6tr0000gn/T/tableau-temp/#TableauTemp_0p5xpen08tmd9x10bij1s0feofgt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/01/2025 10:44:30 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>avg_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cohort_overview.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_los</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_los]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_los</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cohort_overview.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>encounters</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[encounters]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>encounters</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cohort_overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>readmit_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[readmit_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>readmit_rate_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cohort_overview.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>readmits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[readmits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>readmits</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cohort_overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cohort_overview.csv' id='cohort_overview.csv_B1AFBB5EE58D4F8E8A929930312D7F6F'>
+            <properties context=''>
+              <relation connection='textscan.0th7c9111xf80u12t2h831uwl1ne' name='cohort_overview.csv' table='[cohort_overview#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='avg_age' ordinal='0' />
+                  <column datatype='real' name='avg_los' ordinal='1' />
+                  <column datatype='integer' name='encounters' ordinal='2' />
+                  <column datatype='real' name='readmit_rate_pct' ordinal='3' />
+                  <column datatype='integer' name='readmits' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI - cohort Overview'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cohort_overview' name='federated.1mgpeqp0q4tnpr1441u8p1w54qjs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mgpeqp0q4tnpr1441u8p1w54qjs'>
+            <column caption='Avg Age' datatype='real' name='[avg_age]' role='measure' type='quantitative' />
+            <column caption='Avg Los' datatype='real' name='[avg_los]' role='measure' type='quantitative' />
+            <column caption='Encounters' datatype='integer' name='[encounters]' role='measure' type='quantitative' />
+            <column caption='Readmit Rate Pct' datatype='real' name='[readmit_rate_pct]' role='measure' type='quantitative' />
+            <column caption='Readmits' datatype='integer' name='[readmits]' role='measure' type='quantitative' />
+            <column-instance column='[avg_age]' derivation='Sum' name='[sum:avg_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_los]' derivation='Sum' name='[sum:avg_los:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[encounters]' derivation='Sum' name='[sum:encounters:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[readmit_rate_pct]' derivation='Sum' name='[sum:readmit_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[readmits]' derivation='Sum' name='[sum:readmits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[sum:avg_age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[sum:avg_los:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[sum:encounters:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[sum:readmit_rate_pct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[sum:readmits:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[:Measure Names]' value='106' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{4FB1208F-657D-4CF2-8CC3-F762E14970F0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A40EB8DB-6A34-4639-AF5D-5843558FBB54}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='KPI - cohort Overview'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mgpeqp0q4tnpr1441u8p1w54qjs].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F6D15823-D077-45EC-85A9-E9860F619AEB}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{04C066B5-597E-40B6-98F8-A93FA1D722E8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='88' name='KPI - cohort Overview' width='384'>
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,28 @@
+version: 2
+models:
+  - name: stg_patients
+    columns:
+      - name: patient_id
+        tests: [not_null, unique]
+      - name: sex
+        tests:
+          - accepted_values:
+              values: ['M','F']
+      - name: age
+        tests: [not_null]
+  - name: stg_encounters
+    columns:
+      - name: enc_id
+        tests: [not_null, unique]
+      - name: patient_id
+        tests: [not_null]
+      - name: readmit_30d
+        tests: [not_null]
+  - name: stg_labs
+    columns:
+      - name: enc_id
+        tests: [not_null]
+      - name: test_name
+        tests: [not_null]
+      - name: value
+        tests: [not_null]
