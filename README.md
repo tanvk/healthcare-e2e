@@ -112,7 +112,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 - Baseline model: Logistic Regression
 - Tableau: cohort KPIs + feature importance
 
-[![Tableau Dashboard Preview](assets/tableau_preview.png)](https://public.tableau.com/views/overview_17567703623580/Readmission-Overview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Tableau Dashboard Preview](assets/Tableau_preview.png)](https://public.tableau.com/views/overview_17567703623580/Readmission-Overview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
