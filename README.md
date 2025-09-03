@@ -3,7 +3,7 @@
 An end-to-end machine learning + data engineering project simulating hospital 30-day readmission prediction.
 It demonstrates how to take raw healthcare data → transform with SQL/dbt → train a model → serve predictions with FastAPI → and visualize insights in Tableau.
 
-<p align="center"> <img src="assets/architecture.png" alt="Architecture diagram" width="850"> </p>
+<p align="center"> <img src="assets/architecture.png" alt="Architecture diagram" width="350"> </p>
 
 ---
 
@@ -110,9 +110,13 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 - 396 encounters processed
 - Readmission rate ≈ 15%
 - Baseline model: Logistic Regression
-- Tableau: cohort KPIs + feature importance
+- Tableau: cohort KPIs + feature importance - [Tableau Public](https://public.tableau.com/views/overview_17567703623580/Readmission-Overview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-[![Tableau Dashboard Preview](assets/Tableau_preview.png)](https://public.tableau.com/views/overview_17567703623580/Readmission-Overview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+<p align="center">
+  <a href="https://public.tableau.com/views/your-dashboard-url">
+    <img src="assets/Tableau_preview.png" alt="Tableau Dashboard Preview" width="550">
+  </a>
+</p>
 
 ---
 
